@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0591842BBF39F400C5A307 /* CityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0591832BBF39F400C5A307 /* CityCard.swift */; };
+		1B0591862BBF45E600C5A307 /* AttractionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0591852BBF45E600C5A307 /* AttractionRow.swift */; };
 		1B78BCB42BB6711500ABA5A9 /* GuideBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78BCB32BB6711500ABA5A9 /* GuideBookApp.swift */; };
 		1B78BCB62BB6711500ABA5A9 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78BCB52BB6711500ABA5A9 /* CityView.swift */; };
 		1B78BCB82BB6711700ABA5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B78BCB72BB6711700ABA5A9 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0591832BBF39F400C5A307 /* CityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCard.swift; sourceTree = "<group>"; };
+		1B0591852BBF45E600C5A307 /* AttractionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionRow.swift; sourceTree = "<group>"; };
 		1B78BCB02BB6711500ABA5A9 /* GuideBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B78BCB32BB6711500ABA5A9 /* GuideBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideBookApp.swift; sourceTree = "<group>"; };
 		1B78BCB52BB6711500ABA5A9 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
@@ -62,8 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				1B78BCB32BB6711500ABA5A9 /* GuideBookApp.swift */,
-				1B78BCC82BB6723800ABA5A9 /* Model */,
 				1B78BCC12BB671B400ABA5A9 /* Views */,
+				1B78BCC82BB6723800ABA5A9 /* Model */,
 				1B78BCB72BB6711700ABA5A9 /* Assets.xcassets */,
 				1B78BCB92BB6711700ABA5A9 /* Preview Content */,
 			);
@@ -82,7 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				1B78BCB52BB6711500ABA5A9 /* CityView.swift */,
+				1B0591832BBF39F400C5A307 /* CityCard.swift */,
 				1B78BCC22BB671D600ABA5A9 /* AttractionView.swift */,
+				1B0591852BBF45E600C5A307 /* AttractionRow.swift */,
 				1B78BCC42BB6720900ABA5A9 /* DetailView.swift */,
 			);
 			path = Views;
@@ -170,8 +176,10 @@
 			files = (
 				1B78BCB62BB6711500ABA5A9 /* CityView.swift in Sources */,
 				1B78BCC52BB6720900ABA5A9 /* DetailView.swift in Sources */,
+				1B0591862BBF45E600C5A307 /* AttractionRow.swift in Sources */,
 				1B78BCCA2BB6728500ABA5A9 /* City.swift in Sources */,
 				1B78BCCC2BB672E300ABA5A9 /* Attraction.swift in Sources */,
+				1B0591842BBF39F400C5A307 /* CityCard.swift in Sources */,
 				1B78BCB42BB6711500ABA5A9 /* GuideBookApp.swift in Sources */,
 				1B78BCC32BB671D600ABA5A9 /* AttractionView.swift in Sources */,
 				1B78BCC72BB6723500ABA5A9 /* DataService.swift in Sources */,

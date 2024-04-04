@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct DetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  let attraction: Attraction
+  
+  var body: some View {
+    VStack(spacing: 20) {
+      Image(attraction.imageName)
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .frame(height: 300)
+      
+      ScrollView {
+        VStack(alignment: .leading, spacing: 10) {
+          Text(attraction.name)
+            .font(.largeTitle)
+            .bold()
+          
+          Text(attraction.longDescription)
+            .multilineTextAlignment(.leading)
+        }
+        .padding(.bottom, 20)
+      }
+      .padding(.horizontal)
     }
+    .ignoresSafeArea()
+  }
 }
 
-#Preview {
-    DetailView()
-}
+    #Preview {
+      DetailView(attraction: DataService.dataPreview.attractions[0])
+    }

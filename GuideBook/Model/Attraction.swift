@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Attraction {
+struct Attraction: Identifiable {
+  let id = UUID()
   let name: String
   let summary: String
   let longDescription: String

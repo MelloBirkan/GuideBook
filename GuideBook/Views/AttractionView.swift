@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct AttractionView: View {
+  var city: City
+  
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      
+      ScrollView(showsIndicators: false) {
+        VStack {
+          ForEach(city.attractions) { attraction in
+            NavigationLink {
+              DetailView(attraction: attraction)
+            } label: {
+              AttractionRow(attraction: attraction)
+                .padding(.bottom, 50)
+            }
+            .buttonStyle(.plain)
+          }
+        }
+      }
+      .padding(.horizontal)
     }
 }
 
 #Preview {
-    AttractionView()
+  AttractionView(city: DataService.dataPreview)
 }

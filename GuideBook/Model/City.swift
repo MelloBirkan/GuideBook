@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct City {
+struct City: Identifiable {
+  let id = UUID()
   let name: String
   let summary: String
   let imageName: String
-  let attraction: Attraction
+  let attractions: [Attraction]
+  
 }
