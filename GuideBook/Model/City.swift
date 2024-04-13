@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct City: Identifiable {
+struct City: Identifiable, Decodable {
   let id = UUID()
   let name: String
   let summary: String

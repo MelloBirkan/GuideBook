@@ -28,7 +28,7 @@ struct CityView: View {
         .padding(.horizontal)
       }
       .onAppear(perform: {
-        cities.getData()
+        cities.getFileData()
     })
     }
     
